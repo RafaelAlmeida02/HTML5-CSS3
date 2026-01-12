@@ -1,6 +1,43 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    border: 1px solid black;
+    height: 100px;
+}
+
+header, h1{
+    color: white;
+    text-align: center;
+}
+
+.fonte {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 15px;
+    
+}
+
+#p1 {
+    background-color: white;
+}
+
+#p2 {
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 90px;
+    
+}
+
+#p2 > p{
+    background-color: rgba(0, 0, 0, 0.227);
+    width: 200px;
 }
