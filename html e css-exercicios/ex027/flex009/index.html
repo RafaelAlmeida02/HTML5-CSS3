@@ -6,29 +6,28 @@
     <title>Flexible Box</title>
     <style>
         div.conteiner {
-
             background-color: lightsalmon;
 
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row NOwrap;
         }
 
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 150px;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">outro conteudo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">conteúdo um pouo maior</div>
         <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">conteúdo maior ainda, ue vai ocupar mais espaço.</div>
         <div class="item">G</div>
     </div>
 </body>

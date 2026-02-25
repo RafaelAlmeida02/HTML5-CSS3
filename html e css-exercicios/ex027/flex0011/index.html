@@ -6,30 +6,39 @@
     <title>Flexible Box</title>
     <style>
         div.conteiner {
-
             background-color: lightsalmon;
-
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
 
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 200px;
+        }
+
+        div#cx1 {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#cx2 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#cx3 {
+            flex-shrink: 8;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
+       
     </div>
 </body>
 </html>
