@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Grid area contrai ainda mais as shorthands
+ex. grid area: 1 / 1 / 2 / 5;
+significa: linha inicial / coluna inicial / linha final / coluna final*/
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background: red;
+    grid-area: 1 / 1 / span 1 / span 4; /*linha inicial / coluna inicial / linha final / coluna final*/
+}
+
+.caixa2 {
+    background: green;
+    grid-area: 2 / 1 / 4 / 3; /*linha inicial / coluna inicial / linha final / coluna final*/
+}
+
+.caixa3 {
+    background: blue;
+    grid-area: 2 / 3 / 4 / 5; /*linha inicial / coluna inicial / linha final / coluna final*/
+}

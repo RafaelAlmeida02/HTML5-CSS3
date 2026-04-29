@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Grid area contrai ainda mais as shorthands
+ex. grid area: 1 / 1 / 2 / 5;
+significa: linha inicial / coluna inicial / linha final / coluna final*/
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background: red;
+    grid-row: 1 / span 1; /*ou poderia ser a primeira linha +1 span significa expandiu uma linha*/
+    grid-column: 1 / span 4; /*ou poderia ser a primeira coluna +4 ou a ultima coluna -1, span sig. expandiu 4 colunas*/
+}
+
+.caixa2 {
+    background: green;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+
+}
+
+.caixa3 {
+    background: blue;
+    grid-row: 2 / span 2;
+    grid-column: 3 /  -1;
+}

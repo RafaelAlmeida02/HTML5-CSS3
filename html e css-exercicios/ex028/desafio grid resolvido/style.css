@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*********Desafio resolvido***********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px; /*o principal/conteúdo vai ser uma fração do espaço disponível e o resto será os valores fixos colocados*/
+    grid-template-columns: 1fr 150px; /* primeira coluna vai ser 1 fração de todo o elemento/container e a outra coluna será sempre 150px*/
+    gap: 5px;
+}
+
+.caixa {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#topo {
+    grid-area: 1 / 1 / 2 / -1; /*ou -1 ou 3 coluna*/
+}
+
+#menu {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+#conteudo {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#lateral {
+    grid-area: 3 / 2 / 4 / -1;
+}
+
+#rodape {
+    grid-area: 4 / 1 / -1 / -1;
+}
